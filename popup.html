@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+      }
+      .recording {
+        background-color: #ff4444;
+        color: white;
+      }
+      #streamStatus {
+        margin-bottom: 10px;
+        padding: 8px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .stream-found {
+        color: #28a745;
+      }
+      .no-stream {
+        color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="streamStatus">Detecting streams...</div>
+    <button id="toggleRecord" disabled>Start Recording</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
